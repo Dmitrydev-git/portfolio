@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дмитрий — сайты, боты и автоматизация под ключ</title>
+  <meta name="description" content="Дмитрий: лендинги, Telegram-боты, Mini App, парсеры и скрипты. Свой код, без конструкторов. Срочные задачи — до 2 дней. Открыт к заказам.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0f14'/%3E%3Crect x='6' y='6' width='20' height='20' fill='none' stroke='%23c8f542' stroke-width='2'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" aria-label="Главная">
+        <span class="logo-mark" aria-hidden="true">DV</span>
+        <span>dmitry</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Основная навигация">
+        <a href="#about" class="nav-link">Обо мне</a>
+        <a href="#services" class="nav-link">Услуги</a>
+        <a href="#portfolio" class="nav-link">Работы</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Контакты</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://t.me/dmitryd4v" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">
+          Telegram
+        </a>
+        <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false" aria-controls="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="section hero">
+      <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-status">
+            <span class="hero-status-dot" aria-hidden="true"></span>
+            <span>Открыт к заказам</span>
+          </div>
+
+          <h1 class="hero-title">
+            Сайты, боты и скрипты — <span class="accent-text">под ключ</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Я Дмитрий. Делаю лендинги, Telegram-ботов, Mini App, парсеры и мелкую автоматизацию на своём коде. Беру срочные задачи — обычно укладываюсь в пару дней.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://t.me/dmitryd4v" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <span>Написать в Telegram</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </a>
+            <a href="#portfolio" class="hero-link-arrow">
+              <span>Смотреть работы</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="metrics">
+      <div class="container metrics-row">
+        <div class="metric-item">
+          <span class="metric-value">5 лет</span>
+          <span class="metric-label">в разработке и дизайне</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-value">до 2 дней</span>
+          <span class="metric-label">на типовую задачу</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-value">по запросу</span>
+          <span class="metric-label">промежуточный результат</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-value">свой код</span>
+          <span class="metric-label">без Tilda и WordPress</span>
+        </div>
+      </div>
+    </div>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 — Обо мне</span>
+          <h2 class="section-title">Коротко о себе</h2>
+          <p class="section-desc">Без лишнего пафоса — кто я и как работаю.</p>
+        </div>
+
+        <div class="about-grid reveal">
+          <div class="about-lead">
+            <p>Занимаюсь программированием и дизайном. Закончил колледж по направлению «разработка веб и мультимедийных приложений», сейчас учусь в университете на разработчика искусственного интеллекта.</p>
+            <p>Собираю сайты и ботов целиком: от структуры и визуала до рабочего кода. Не использую конструкторы — только свой стек, чтобы было быстро, чисто и удобно править дальше.</p>
+            <p>Если нужно что-то простое и срочное — могу взять и закрыть за 1–2 дня. Если задача тяжёлая, лучше прислать ТЗ: так честнее по срокам и результату.</p>
+          </div>
+          <aside class="about-aside">
+            <div class="about-fact">
+              <span class="about-fact-label">Имя</span>
+              <span class="about-fact-value">Дмитрий</span>
+            </div>
+            <div class="about-fact">
+              <span class="about-fact-label">Формат</span>
+              <span class="about-fact-value">Удалённо, по всей РФ</span>
+            </div>
+            <div class="about-fact">
+              <span class="about-fact-label">Стек</span>
+              <span class="about-fact-value">HTML / CSS / JS, Python, Telegram API</span>
+            </div>
+            <div class="about-fact">
+              <span class="about-fact-label">Ответ</span>
+              <span class="about-fact-value">Обычно в течение дня</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 — Услуги</span>
+          <h2 class="section-title">Что могу сделать</h2>
+          <p class="section-desc">Цена — по договорённости после короткого брифа. Предоплата 50%.</p>
+        </div>
+
+        <div class="services-list reveal">
+          <article class="service-row">
+            <span class="service-index">01</span>
+            <div class="service-main">
+              <div>
+                <h3 class="service-title">Лендинги и сайты</h3>
+                <p class="service-desc">Одностраничники и небольшие сайты под задачу: структура, адаптив, формы, базовая SEO-оптимизация.</p>
+              </div>
+              <div class="service-features">
+                <span class="service-feature-item">Дизайн и вёрстка с нуля</span>
+                <span class="service-feature-item">Только вёрстка или только дизайн — тоже можно</span>
+                <span class="service-feature-item">Без Tilda / WordPress — свой код</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-row">
+            <span class="service-index">02</span>
+            <div class="service-main">
+              <div>
+                <h3 class="service-title">Telegram-боты и Mini App</h3>
+                <p class="service-desc">Боты под продажи, поддержку, учёт и сервисы. При необходимости — мини-приложение внутри Telegram.</p>
+              </div>
+              <div class="service-features">
+                <span class="service-feature-item">Меню, заявки, каталоги, платежи</span>
+                <span class="service-feature-item">Связка с таблицами, CRM и API</span>
+                <span class="service-feature-item">Telegram Mini App под продукт</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-row">
+            <span class="service-index">03</span>
+            <div class="service-main">
+              <div>
+                <h3 class="service-title">Парсеры и мониторинг</h3>
+                <p class="service-desc">Сбор данных с сайтов и маркетплейсов, слежение за ценами, выгрузка в удобный формат.</p>
+              </div>
+              <div class="service-features">
+                <span class="service-feature-item">Мониторинг цен и наличия</span>
+                <span class="service-feature-item">Уведомления в Telegram</span>
+                <span class="service-feature-item">Экспорт в Excel, CSV, JSON</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-row">
+            <span class="service-index">04</span>
+            <div class="service-main">
+              <div>
+                <h3 class="service-title">Скрипты и автоматизация</h3>
+                <p class="service-desc">Небольшие программы и связки сервисов, чтобы убрать рутину из ежедневной работы.</p>
+              </div>
+              <div class="service-features">
+                <span class="service-feature-item">Скрипты под конкретную задачу</span>
+                <span class="service-feature-item">Интеграции через API и вебхуки</span>
+                <span class="service-feature-item">Обработка заявок и уведомлений</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="services-note reveal">Нужно что-то рядом по смыслу — напиши, разберёмся. Сложные задачи оцениваю после ТЗ или созвона.</p>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 — Как работаю</span>
+          <h2 class="section-title">От сообщения до сдачи</h2>
+          <p class="section-desc">Простой порядок без лишней бюрократии.</p>
+        </div>
+
+        <ol class="process-list reveal">
+          <li class="process-step">
+            <span class="process-num">01</span>
+            <div>
+              <h3 class="process-title">Бриф</h3>
+              <p class="process-desc">Пишешь в Telegram, что нужно. Для простой задачи хватит переписки, для сложной — лучше ТЗ.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-num">02</span>
+            <div>
+              <h3 class="process-title">Оценка</h3>
+              <p class="process-desc">Согласуем объём, срок и цену. Предоплата 50%, остальное — после сдачи.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-num">03</span>
+            <div>
+              <h3 class="process-title">Сборка</h3>
+              <p class="process-desc">Делаю работу. По запросу могу прислать промежуточный результат — чтобы ты видел ход и мог скорректировать вовремя.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-num">04</span>
+            <div>
+              <h3 class="process-title">Правки и сдача</h3>
+              <p class="process-desc">В цену входят 2 круга правок по согласованному ТЗ. Дальше — по договорённости.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 — Работы</span>
+          <h2 class="section-title">Недавние проекты</h2>
+          <p class="section-desc">Лендинги, боты и парсеры. Кликни карточку — откроются все скриншоты.</p>
+        </div>
+
+        <div class="portfolio-grid reveal">
+          <article
+            class="project-card"
+            role="button"
+            tabindex="0"
+            data-gallery-title="AURAFIT — фитнес-студия"
+            data-gallery="assets/aurafit.png|assets/aurafit-reviews.png|assets/aurafit-form.png"
+            aria-label="Открыть скриншоты AURAFIT"
+          >
+            <div class="project-preview project-preview--image">
+              <img src="assets/aurafit.png" alt="AURAFIT — лендинг фитнес-студии" loading="lazy" width="1280" height="720">
+              <span class="project-view-hint">Смотреть скриншоты</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">HTML / CSS / JS</span>
+                <span class="project-tag">Landing</span>
+                <span class="project-tag">UI/UX</span>
+              </div>
+              <h3 class="project-title">AURAFIT — фитнес-студия</h3>
+              <p class="project-desc">Сайт под запись в бутик-студию: первый экран с оффером, отзывы, форма бронирования и понятный путь до заявки. Светлый UI, акцент на конверсию.</p>
+              <ul class="project-highlights">
+                <li>Дизайн и вёрстка целиком</li>
+                <li>Блок отзывов и форма записи</li>
+                <li>Адаптив под телефон</li>
+              </ul>
+              <div class="project-footer">
+                <span class="project-type">Лендинг · полный цикл</span>
+                <span class="project-shots">3 скрина</span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="project-card"
+            role="button"
+            tabindex="0"
+            data-gallery-title="Kortex AI — SaaS-платформа"
+            data-gallery="assets/kortex-ai.png|assets/kortex-ai-features.png|assets/kortex-ai-steps.png|assets/kortex-ai-pricing.png"
+            aria-label="Открыть скриншоты Kortex AI"
+          >
+            <div class="project-preview project-preview--image">
+              <img src="assets/kortex-ai.png" alt="Kortex AI — лендинг SaaS-платформы" loading="lazy" width="1280" height="720">
+              <span class="project-view-hint">Смотреть скриншоты</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">HTML / CSS / JS</span>
+                <span class="project-tag">SaaS</span>
+                <span class="project-tag">Dark UI</span>
+              </div>
+              <h3 class="project-title">Kortex AI — SaaS-лендинг</h3>
+              <p class="project-desc">Продающая страница AI-сервиса: hero с интерфейсом продукта, интеграции, пошаговый сценарий и тарифы. Тёмная тема под tech-аудиторию.</p>
+              <ul class="project-highlights">
+                <li>Сложный UI продукта на первом экране</li>
+                <li>Блоки фич, шагов и тарифов</li>
+                <li>Единый визуальный язык</li>
+              </ul>
+              <div class="project-footer">
+                <span class="project-type">SaaS · полный цикл</span>
+                <span class="project-shots">4 скрина</span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="project-card"
+            role="button"
+            tabindex="0"
+            data-gallery-title="DoDaily — ИИ-тренер в Telegram"
+            data-gallery="assets/dodaily-app.png|assets/dodaily-bot.png|assets/dodaily-progress.png"
+            aria-label="Открыть скриншоты DoDaily"
+          >
+            <div class="project-preview project-preview--image project-preview--tall">
+              <img src="assets/dodaily-app.png" alt="DoDaily — Telegram Mini App с ИИ-тренером" loading="lazy" width="720" height="1280">
+              <span class="project-view-hint">Смотреть скриншоты</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Telegram Bot</span>
+                <span class="project-tag">Mini App</span>
+                <span class="project-tag">AI</span>
+                <span class="project-tag">Python</span>
+              </div>
+              <h3 class="project-title">DoDaily — ИИ-тренер</h3>
+              <p class="project-desc">Сервис в Telegram: бот плюс Mini App. Учёт еды свободным текстом с расчётом КБЖУ, вода, тренировки, привычки, прогресс и Premium.</p>
+              <ul class="project-highlights">
+                <li>ИИ для разбора приёмов пищи</li>
+                <li>Полноценный Mini App-дашборд</li>
+                <li>Логика подписки и голоса</li>
+              </ul>
+              <div class="project-footer">
+                <span class="project-type">Бот · Mini App · AI</span>
+                <span class="project-shots">3 скрина</span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="project-card"
+            role="button"
+            tabindex="0"
+            data-gallery-title="DropAlert — парсер цен Wildberries"
+            data-gallery="assets/dropalert-notify.png|assets/dropalert-list.png|assets/dropalert-help.png"
+            aria-label="Открыть скриншоты DropAlert"
+          >
+            <div class="project-preview project-preview--image project-preview--tall">
+              <img src="assets/dropalert-notify.png" alt="DropAlert — уведомление об изменении цены" loading="lazy" width="720" height="1280">
+              <span class="project-view-hint">Смотреть скриншоты</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Telegram Bot</span>
+                <span class="project-tag">Parsing</span>
+                <span class="project-tag">Wildberries</span>
+                <span class="project-tag">Python</span>
+              </div>
+              <h3 class="project-title">DropAlert — мониторинг WB</h3>
+              <p class="project-desc">Бот следит за ценами на Wildberries: добавил ссылку — получил список, обновление и сообщение, когда цена выросла или упала.</p>
+              <ul class="project-highlights">
+                <li>Парсинг карточек по URL</li>
+                <li>Алерты об изменении цены</li>
+                <li>Управление списком из чата</li>
+              </ul>
+              <div class="project-footer">
+                <span class="project-type">Бот · парсер</span>
+                <span class="project-shots">3 скрина</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">05 — FAQ</span>
+          <h2 class="section-title">Частые вопросы</h2>
+          <p class="section-desc">Коротко по срокам, оплате и формату работы.</p>
+        </div>
+
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary class="faq-question">Сколько занимает типовая задача?</summary>
+            <p class="faq-answer">Обычно до 2 дней. Беру и срочные заказы. Если проект большой — срок согласуем после ТЗ.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Нужно ли готовое ТЗ?</summary>
+            <p class="faq-answer">Для простой задачи хватит переписки в Telegram. Для сложной — лучше ТЗ: так меньше сюрпризов по срокам и объёму.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Как оплата?</summary>
+            <p class="faq-answer">Цена по договорённости. Предоплата 50%, остальное после сдачи.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Делаешь на Tilda или WordPress?</summary>
+            <p class="faq-answer">Нет. Только свой код — так проще контролировать скорость, качество и дальнейшие правки.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Можно заказать только дизайн или только вёрстку?</summary>
+            <p class="faq-answer">Да. Можно полный цикл или отдельно дизайн / вёрстку / бота / скрипт.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Можно ли увидеть работу до сдачи?</summary>
+            <p class="faq-answer">Да. По запросу пришлю промежуточный результат — скрин, ссылку или демо, чтобы можно было поправить курс до финала.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Сколько правок входит?</summary>
+            <p class="faq-answer">Два круга правок в рамках согласованного ТЗ. Дополнительные правки и поддержка — отдельно, по договорённости.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">06 — Контакты</span>
+          <h2 class="section-title">Напиши — обсудим задачу</h2>
+          <p class="section-desc">Отвечаю обычно в течение дня. Удобнее всего Telegram.</p>
+        </div>
+
+        <div class="contact-wrapper reveal">
+          <div class="contact-info">
+            <div class="contact-info-header">
+              <h3>Связь со мной</h3>
+              <p>Кратко опиши задачу — оценю срок и стоимость. Предоплата 50%.</p>
+            </div>
+
+            <div class="contact-channels">
+              <a href="https://t.me/dmitryd4v" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+                <div class="contact-channel-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </div>
+                <div class="contact-channel-details">
+                  <span class="contact-channel-label">Telegram</span>
+                  <span class="contact-channel-value">@dmitryd4v</span>
+                </div>
+              </a>
+
+              <a href="mailto:dmitryignatov12321@gmail.com" class="contact-channel-item">
+                <div class="contact-channel-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-channel-details">
+                  <span class="contact-channel-label">Email</span>
+                  <span class="contact-channel-value">dmitryignatov12321@gmail.com</span>
+                </div>
+              </a>
+            </div>
+
+            <a href="https://t.me/dmitryd4v" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <span>Быстрый чат в Telegram</span>
+            </a>
+          </div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="userName" class="form-label">Имя</label>
+              <input type="text" id="userName" name="name" class="form-input" placeholder="Иван" required autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <label for="userContact" class="form-label">Контакт</label>
+              <input type="text" id="userContact" name="contact" class="form-input" placeholder="@username или mail@example.com" required autocomplete="email">
+            </div>
+
+            <div class="form-group">
+              <label for="userMessage" class="form-label">Задача</label>
+              <textarea id="userMessage" name="message" class="form-textarea" placeholder="Нужен лендинг / Telegram-бот..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="formSubmitBtn">
+              <span>Подготовить сообщение</span>
+            </button>
+
+            <div id="formFeedback" class="form-feedback" role="status" aria-live="polite"></div>
+            <p class="form-notice">Форма откроет почтовый клиент. Для быстрого ответа удобнее Telegram.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="gallery-modal" id="galleryModal" hidden aria-hidden="true">
+    <div class="gallery-backdrop" data-gallery-close></div>
+    <div class="gallery-dialog" role="dialog" aria-modal="true" aria-labelledby="galleryTitle">
+      <header class="gallery-header">
+        <h3 class="gallery-title" id="galleryTitle"></h3>
+        <div class="gallery-header-actions">
+          <span class="gallery-counter" id="galleryCounter"></span>
+          <button type="button" class="gallery-close" id="galleryClose" aria-label="Закрыть галерею">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </header>
+      <div class="gallery-stage">
+        <button type="button" class="gallery-nav gallery-nav--prev" id="galleryPrev" aria-label="Предыдущий скриншот">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <div class="gallery-image-wrap">
+          <img src="" alt="" id="galleryImage">
+        </div>
+        <button type="button" class="gallery-nav gallery-nav--next" id="galleryNext" aria-label="Следующий скриншот">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+      <div class="gallery-thumbs" id="galleryThumbs"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-text">
+        © <span id="currentYear"></span> Дмитрий
+      </div>
+      <a href="#hero" class="back-to-top">
+        <span>Наверх</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const yearElem = document.getElementById('currentYear');
+      if (yearElem) yearElem.textContent = new Date().getFullYear();
+
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // Mobile menu
+      const burgerBtn = document.getElementById('burgerBtn');
+      const navMenu = document.getElementById('navMenu');
+
+      function closeMenu() {
+        if (!burgerBtn || !navMenu) return;
+        navMenu.classList.remove('open');
+        burgerBtn.classList.remove('open');
+        burgerBtn.setAttribute('aria-expanded', 'false');
+        burgerBtn.setAttribute('aria-label', 'Открыть меню');
+      }
+
+      function openMenu() {
+        navMenu.classList.add('open');
+        burgerBtn.classList.add('open');
+        burgerBtn.setAttribute('aria-expanded', 'true');
+        burgerBtn.setAttribute('aria-label', 'Закрыть меню');
+      }
+
+      if (burgerBtn && navMenu) {
+        burgerBtn.addEventListener('click', () => {
+          if (navMenu.classList.contains('open')) closeMenu();
+          else openMenu();
+        });
+
+        navMenu.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', closeMenu);
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            if (document.body.classList.contains('gallery-open')) return;
+            closeMenu();
+          }
+        });
+
+        document.addEventListener('click', (e) => {
+          if (!navMenu.classList.contains('open')) return;
+          if (navMenu.contains(e.target) || burgerBtn.contains(e.target)) return;
+          closeMenu();
+        });
+      }
+
+      // Project gallery
+      const galleryModal = document.getElementById('galleryModal');
+      const galleryTitle = document.getElementById('galleryTitle');
+      const galleryCounter = document.getElementById('galleryCounter');
+      const galleryImage = document.getElementById('galleryImage');
+      const galleryThumbs = document.getElementById('galleryThumbs');
+      const galleryClose = document.getElementById('galleryClose');
+      const galleryPrev = document.getElementById('galleryPrev');
+      const galleryNext = document.getElementById('galleryNext');
+      const projectCards = document.querySelectorAll('.project-card[data-gallery]');
+
+      let galleryImages = [];
+      let galleryIndex = 0;
+
+      function renderGallery() {
+        if (!galleryImages.length) return;
+        const src = galleryImages[galleryIndex];
+        galleryImage.src = src;
+        galleryImage.alt = (galleryTitle.textContent || 'Скриншот') + ' — ' + (galleryIndex + 1);
+        galleryCounter.textContent = (galleryIndex + 1) + ' / ' + galleryImages.length;
+        galleryPrev.disabled = galleryImages.length < 2;
+        galleryNext.disabled = galleryImages.length < 2;
+
+        galleryThumbs.querySelectorAll('.gallery-thumb').forEach((thumb, i) => {
+          thumb.classList.toggle('is-active', i === galleryIndex);
+        });
+      }
+
+      function buildThumbs() {
+        galleryThumbs.innerHTML = '';
+        galleryImages.forEach((src, i) => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'gallery-thumb' + (i === 0 ? ' is-active' : '');
+          btn.setAttribute('aria-label', 'Скриншот ' + (i + 1));
+          const img = document.createElement('img');
+          img.src = src;
+          img.alt = '';
+          img.loading = 'lazy';
+          btn.appendChild(img);
+          btn.addEventListener('click', () => {
+            galleryIndex = i;
+            renderGallery();
+          });
+          galleryThumbs.appendChild(btn);
+        });
+      }
+
+      function openGallery(card) {
+        const raw = card.getAttribute('data-gallery') || '';
+        galleryImages = raw.split('|').map(s => s.trim()).filter(Boolean);
+        if (!galleryImages.length) return;
+
+        galleryIndex = 0;
+        galleryTitle.textContent = card.getAttribute('data-gallery-title') || 'Проект';
+        buildThumbs();
+        renderGallery();
+
+        galleryModal.hidden = false;
+        galleryModal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('gallery-open');
+        galleryClose.focus();
+      }
+
+      function closeGallery() {
+        if (!galleryModal || galleryModal.hidden) return;
+        galleryModal.hidden = true;
+        galleryModal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('gallery-open');
+        galleryImage.src = '';
+        galleryThumbs.innerHTML = '';
+        galleryImages = [];
+      }
+
+      function showPrev() {
+        if (galleryImages.length < 2) return;
+        galleryIndex = (galleryIndex - 1 + galleryImages.length) % galleryImages.length;
+        renderGallery();
+      }
+
+      function showNext() {
+        if (galleryImages.length < 2) return;
+        galleryIndex = (galleryIndex + 1) % galleryImages.length;
+        renderGallery();
+      }
+
+      projectCards.forEach(card => {
+        card.addEventListener('click', () => openGallery(card));
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openGallery(card);
+          }
+        });
+      });
+
+      if (galleryClose) galleryClose.addEventListener('click', closeGallery);
+      if (galleryPrev) galleryPrev.addEventListener('click', showPrev);
+      if (galleryNext) galleryNext.addEventListener('click', showNext);
+
+      if (galleryModal) {
+        galleryModal.querySelectorAll('[data-gallery-close]').forEach(el => {
+          el.addEventListener('click', closeGallery);
+        });
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (!document.body.classList.contains('gallery-open')) return;
+        if (e.key === 'Escape') {
+          e.preventDefault();
+          closeGallery();
+        } else if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          showPrev();
+        } else if (e.key === 'ArrowRight') {
+          e.preventDefault();
+          showNext();
+        }
+      });
+
+      // Scroll spy
+      const sections = ['about', 'services', 'portfolio', 'faq', 'contact']
+        .map(id => document.getElementById(id))
+        .filter(Boolean);
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      function updateActiveNav() {
+        const offset = window.scrollY + 120;
+        let current = null;
+        sections.forEach(section => {
+          if (section.offsetTop <= offset) current = section.id;
+        });
+        navLinks.forEach(link => {
+          const href = link.getAttribute('href');
+          link.classList.toggle('active', current && href === '#' + current);
+        });
+      }
+
+      window.addEventListener('scroll', updateActiveNav, { passive: true });
+      updateActiveNav();
+
+      // Reveal on scroll
+      const revealEls = document.querySelectorAll('.reveal');
+      if (prefersReducedMotion) {
+        revealEls.forEach(el => el.classList.add('is-visible'));
+      } else if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        revealEls.forEach(el => io.observe(el));
+      } else {
+        revealEls.forEach(el => el.classList.add('is-visible'));
+      }
+
+      // Contact form — honest mailto, no fake "sent"
+      const contactForm = document.getElementById('contactForm');
+      const formFeedback = document.getElementById('formFeedback');
+      const formSubmitBtn = document.getElementById('formSubmitBtn');
+
+      if (contactForm && formFeedback && formSubmitBtn) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('userName').value.trim();
+          const contact = document.getElementById('userContact').value.trim();
+          const message = document.getElementById('userMessage').value.trim();
+
+          if (!name || !contact || !message) {
+            formFeedback.className = 'form-feedback is-visible is-info';
+            formFeedback.textContent = 'Заполните все поля.';
+            return;
+          }
+
+          const subject = encodeURIComponent('Заявка с сайта: ' + name);
+          const body = encodeURIComponent(
+            'Имя: ' + name + '\nКонтакт: ' + contact + '\n\n' + message
+          );
+          const mailto = 'mailto:dmitryignatov12321@gmail.com?subject=' + subject + '&body=' + body;
+
+          formFeedback.className = 'form-feedback is-visible is-info';
+          formFeedback.textContent = 'Открываю почтовый клиент… Удобнее написать в Telegram.';
+          formSubmitBtn.classList.add('is-loading');
+          formSubmitBtn.disabled = true;
+
+          window.location.href = mailto;
+
+          setTimeout(() => {
+            formSubmitBtn.classList.remove('is-loading');
+            formSubmitBtn.disabled = false;
+          }, 1500);
+        });
+      }
+
+      // Hero canvas — sparse grid nodes + lime/cyan lines
+      const hero = document.getElementById('hero');
+      const canvas = document.getElementById('heroCanvas');
+
+      if (hero && canvas) {
+        const ctx = canvas.getContext('2d');
+        const isPointerFine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+        let width = 0;
+        let height = 0;
+        let dpr = 1;
+        let nodes = [];
+        let mouse = { x: -9999, y: -9999, active: false };
+
+        const palette = [
+          { r: 200, g: 245, b: 66 },
+          { r: 94, g: 234, b: 212 },
+          { r: 139, g: 154, b: 171 }
+        ];
+
+        function resize() {
+          const rect = hero.getBoundingClientRect();
+          width = rect.width;
+          height = rect.height;
+          dpr = Math.min(window.devicePixelRatio || 1, 2);
+          canvas.width = Math.floor(width * dpr);
+          canvas.height = Math.floor(height * dpr);
+          canvas.style.width = width + 'px';
+          canvas.style.height = height + 'px';
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        }
+
+        class Node {
+          constructor(x, y) {
+            this.baseX = x;
+            this.baseY = y;
+            this.x = x;
+            this.y = y;
+            this.vx = (Math.random() - 0.5) * 0.08;
+            this.vy = (Math.random() - 0.5) * 0.08;
+            this.size = Math.random() * 1.4 + 0.8;
+            this.color = palette[Math.floor(Math.random() * palette.length)];
+            this.phase = Math.random() * Math.PI * 2;
+          }
+
+          update(t) {
+            this.x += this.vx;
+            this.y += this.vy;
+            this.x += Math.sin(t * 0.0004 + this.phase) * 0.15;
+            this.y += Math.cos(t * 0.00035 + this.phase) * 0.12;
+
+            const pad = 40;
+            if (this.x < -pad) this.x = width + pad;
+            if (this.x > width + pad) this.x = -pad;
+            if (this.y < -pad) this.y = height + pad;
+            if (this.y > height + pad) this.y = -pad;
+
+            if (isPointerFine && mouse.active) {
+              const dx = this.x - mouse.x;
+              const dy = this.y - mouse.y;
+              const dist = Math.hypot(dx, dy);
+              if (dist < 120 && dist > 0) {
+                const f = (1 - dist / 120) * 18;
+                this.x += (dx / dist) * f * 0.08;
+                this.y += (dy / dist) * f * 0.08;
+              }
+            }
+          }
+
+          draw() {
+            const { r, g, b } = this.color;
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(${r},${g},${b},0.55)`;
+            ctx.fill();
+          }
+        }
+
+        function initNodes() {
+          nodes = [];
+          const count = Math.max(28, Math.floor((width * height) / 28000));
+          for (let i = 0; i < count; i++) {
+            nodes.push(new Node(Math.random() * width, Math.random() * height));
+          }
+        }
+
+        function drawLinks() {
+          const maxDist = 130;
+          for (let i = 0; i < nodes.length; i++) {
+            for (let j = i + 1; j < nodes.length; j++) {
+              const a = nodes[i];
+              const b = nodes[j];
+              const dx = a.x - b.x;
+              const dy = a.y - b.y;
+              const dist = Math.hypot(dx, dy);
+              if (dist < maxDist) {
+                const alpha = (1 - dist / maxDist) * 0.18;
+                ctx.beginPath();
+                ctx.moveTo(a.x, a.y);
+                ctx.lineTo(b.x, b.y);
+                ctx.strokeStyle = `rgba(200, 245, 66, ${alpha})`;
+                ctx.lineWidth = 1;
+                ctx.stroke();
+              }
+            }
+          }
+        }
+
+        resize();
+        initNodes();
+
+        if (prefersReducedMotion) {
+          ctx.clearRect(0, 0, width, height);
+          drawLinks();
+          nodes.forEach(n => n.draw());
+        } else {
+          function animate(t) {
+            ctx.clearRect(0, 0, width, height);
+            for (let i = 0; i < nodes.length; i++) {
+              nodes[i].update(t);
+            }
+            drawLinks();
+            nodes.forEach(n => n.draw());
+            requestAnimationFrame(animate);
+          }
+          requestAnimationFrame(animate);
+        }
+
+        if (isPointerFine) {
+          hero.addEventListener('mousemove', (e) => {
+            const rect = hero.getBoundingClientRect();
+            mouse.x = e.clientX - rect.left;
+            mouse.y = e.clientY - rect.top;
+            mouse.active = true;
+          });
+          hero.addEventListener('mouseleave', () => {
+            mouse.active = false;
+          });
+        }
+
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+          clearTimeout(resizeTimeout);
+          resizeTimeout = setTimeout(() => {
+            resize();
+            initNodes();
+            if (prefersReducedMotion) {
+              ctx.clearRect(0, 0, width, height);
+              drawLinks();
+              nodes.forEach(n => n.draw());
+            }
+          }, 150);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
