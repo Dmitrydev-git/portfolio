@@ -282,7 +282,10 @@
                 <li>Адаптив под телефон</li>
               </ul>
               <div class="project-footer">
-                <span class="project-type">Лендинг · полный цикл</span>
+                <a href="https://aurafit.dm1trydev.ru" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Смотреть сайт</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
                 <span class="project-shots">3 скрина</span>
               </div>
             </div>
@@ -314,7 +317,10 @@
                 <li>Единый визуальный язык</li>
               </ul>
               <div class="project-footer">
-                <span class="project-type">SaaS · полный цикл</span>
+                <a href="https://kortex.dm1trydev.ru" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Смотреть сайт</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
                 <span class="project-shots">4 скрина</span>
               </div>
             </div>
@@ -676,8 +682,12 @@
       }
 
       projectCards.forEach(card => {
-        card.addEventListener('click', () => openGallery(card));
+        card.addEventListener('click', (e) => {
+          if (e.target.closest('.project-link')) return;
+          openGallery(card);
+        });
         card.addEventListener('keydown', (e) => {
+          if (e.target.closest('.project-link')) return;
           if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
             openGallery(card);
